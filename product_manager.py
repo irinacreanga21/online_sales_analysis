@@ -20,9 +20,9 @@ class ProductManager:
     def total_inventory_value (self):
         total_value=0.0
         for i in self.products:
-            total_value = i.price*i.quantity
-            print(f"Total inventory value is: {total_value:.2f}")
-            return total_value
+            total_value += i.price*i.quantity
+        print(f"Total inventory value is: {total_value:.2f}")
+        return total_value
             
         
         
