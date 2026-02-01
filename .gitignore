@@ -1,0 +1,7 @@
+# Ignoring _pycashe_\
+
+*.pyc
+
+# ignoră fișierul JSON
+
+*.json
