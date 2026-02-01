@@ -10,6 +10,13 @@ class ProductManager:
         for i in self.products:
             print (f"{i.name}-price:{i.price:.1f}, quantity:{i.quantity}")
             
+            
+    def remove_by_name(self, name:str):
+        for c in self.products:
+            if c.name == name:
+                self.products.remove(c)
+                break
+            
     def total_inventory_value (self):
         total_value=0.0
         for i in self.products:
